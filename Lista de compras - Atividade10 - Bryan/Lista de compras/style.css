@@ -1,0 +1,190 @@
+/* style.css */
+
+:root{
+
+
+    --azul-degrade: linear-gradient(to bottom, #000000, #131730, #232e74);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--azul-degrade);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e55b50;
+}
+
+.list-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #e55b50;
+}
+
+.bought-title {
+    color: #FF6F61;
+}
+
+.item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.item-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.item-list li .icons {
+    display: flex;
+    gap: 10px;
+}
+
+.item-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.item-list li.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Centralizar o conteúdo da página */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centralizar e arredondar a caixa de input */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#novo-item-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Centralizar o botão */
+.botao {
+    padding: 10px 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.botao:hover {
+    background-color: #FF4C41;
+}
+
+/* Adicionar linhas pontilhadas abaixo dos títulos */
+.lista-titulo {
+    position: relative;
+    font-size: 20px;
+    color: #FF6F61;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.lista-titulo:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #FF6F61;
+    border-bottom: 2px dashed #FF6F61;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+/* Estilos para a lista */
+.item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.item-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item-list li label {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.item-list li .icons {
+    font-size: 14px;
+}
+
+.checked label {
+    text-decoration: line-through;
+    color: #aaa;
+}
